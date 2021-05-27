@@ -50,29 +50,30 @@ class Header extends Component {
               />{" "}
             </NavbarBrand>
             <NavbarToggler onClick={this.toggleNav} />
-            <Collapse isOpen={this.state.isNavOpen} navbar />
-            <Nav navbar>
-              <NavItem>
-                <NavLink className="nav-link" to="/home">
-                  <i className="fa fa-home fa-lg" /> Home
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink className="nav-link" to="/directory">
-                  <i className="fa fa-list fa-lg" /> Directory
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink className="nav-link" to="/aboutus">
-                  <i className="fa fa-info fa-lg" /> About
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink className="nav-link" to="/contactus">
-                  <i className="fa fa-card fa-lg" /> Contact Us
-                </NavLink>
-              </NavItem>
-            </Nav>
+            <Collapse isOpen={this.state.isNavOpen} navbar>
+              <Nav navbar>
+                <NavItem>
+                  <NavLink className="nav-link" to="/home">
+                    <i className="fa fa-home fa-lg" /> Home
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink className="nav-link" to="/directory">
+                    <i className="fa fa-list fa-lg" /> Directory
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink className="nav-link" to="/aboutus">
+                    <i className="fa fa-info fa-lg" /> About
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink className="nav-link" to="/contactus">
+                    <i className="fa fa-card fa-lg" /> Contact Us
+                  </NavLink>
+                </NavItem>
+              </Nav>
+            </Collapse>
           </div>
         </Navbar>
       </React.Fragment>
